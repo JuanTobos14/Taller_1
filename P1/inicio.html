@@ -2,38 +2,115 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="../css/general.css">
+    <title>Inicio - Verilio Andino</title>
+    <link rel="stylesheet" href="../css/universal.css">
+    <link rel="stylesheet" href="../P1/columnas.css">
 </head>
+
 <body>
+    <div class="logo">
+        <a href="../P1/inicio.html" target="_self">
+            <img src="../Recursos/logo.png" alt="Logo">
+        </a>
+    </div>
+
     <header>
-        <h1>Verilio Andino</h1>
         <nav>
-            <button>Inicio</button>
-            <button>Historia</button>
-            <button>Tipos</button>
-            <button>Comercio</button>
-            <button>Problematicas</button>
-            <button>Bibliografía</button>
+            <a href="../P2/historia.html" target="_self">
+                <button>Historia</button>
+            </a>
+            <a href="../P3/tipos.html" target="_self">
+                <button>Tipos</button>
+            </a>
+            <a href="../P4/comercio.html" target="_self">
+                <button>Comercio</button>
+            </a>
+            <a href="../P5/problematicas.html" target="_self">
+                <button>Problematicas</button>
+            </a>
+            <a href="../P6/bibliografia.html" target="_self">
+                <button>Bibliografía</button>
+            </a>
         </nav>
     </header>
 
     <main>
+
         <section class="contenido">
-            <div class="columna">
-                <p>Texto 1</p>
-            </div>
-            <div class="columna">
-                <p>Texto 2</p>
-            </div>
-            <div class="columna">
-                <p>Texto 3</p>
-            </div>
+
+            <article class="columna">
+                <h2>Producción</h2>
+                <p>Colombia es reconocida mundialmente por sus esmeraldas de calidad excepcional. Las principales minas se encuentran en Muzo, Coscuez y Chivor, que producen esmeraldas con un color verde vibrante y una claridad única. Colombia lidera la industria debido a la combinación de condiciones geológicas perfectas y métodos tradicionales de extracción. La esmeralda colombiana es altamente apreciada en el mercado global, destacándose por su intensidad de color y su rareza. ¡Es el corazón de las mejores esmeraldas del mundo!</p>
+                <img src="../Recursos/Producción.jpg" alt="esmeralda_extraida">
+            </article>
+
+            <article class="columna">
+                <h2>Tipos</h2>
+                <p>Las esmeraldas se clasifican según su color y corte. En cuanto al color, destacan las esmeraldas verdes, que varían desde un verde claro hasta un verde intenso, y las esmeraldas azuladas, que tienen un toque de azul en su tono verde. En cuanto al corte, los más comunes son el corte esmeralda, rectangular o cuadrado con esquinas truncadas, que resalta su claridad, y el corte redondo, que maximiza el brillo de la piedra. También se encuentran cortes cabuchón, más suaves y redondeados, para resaltar su color.</p>
+                <img src="../Recursos/Tipos.jpg" alt="cortes_de_esmeraldas">
+            </article>
+
+            <article class="columna">
+                <h2>Comercio</h2>
+                <p>Destacan diferentes tipos según su origen, corte y calidad. Las esmeraldas colombianas son las más valoradas por su color verde vibrante y claridad, mientras que las zambianas se distinguen por su tonalidad verde más profunda y su mayor resistencia. Las esmeraldas brasileñas ofrecen una excelente transparencia y tonalidad, siendo muy demandadas por su belleza. Las tanzanas son raras y cotizadas por su verde oscuro único, y las afganas, aunque menos conocidas, son apreciadas por su rareza y su color verde claro.</p>
+                <img src="../Recursos/Comercio.jpg" alt="tratamiento_esmeralda">
+            </article>
+
         </section>
+
     </main>
 
     <footer>
-        <p>Todos los derechos reservados</p>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>¿Cómo la pasaste?</legend>
+                
+                <div class="form-group">
+                    <div>
+                        <label for="desc">Cuéntanos:</label>
+                        <textarea id="desc" name="desc" rows="3" cols="20"></textarea>
+                    </div>
+
+                    <div>
+                        <label>Califícanos:</label>
+                        <div class="calificacion">
+                            <label>
+                                <input type="radio" name="catg" value="A">
+                                0
+                            </label>
+                            <label>
+                                <input type="radio" name="catg" value="B">
+                                1
+                            </label>
+                            <label>
+                                <input type="radio" name="catg" value="C">
+                                2
+                            </label>
+                            <label>
+                                <input type="radio" name="catg" value="D">
+                                3
+                            </label>
+                            <label>
+                                <input type="radio" name="catg" value="E">
+                                4
+                            </label>
+                            <label>
+                                <input type="radio" name="catg" value="F" checked>
+                                5
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </div>
+                
+            </fieldset>
+        </form>
+
+        <p>Todos los derechos reservados ©</p>
     </footer>
 </body>
 </html>

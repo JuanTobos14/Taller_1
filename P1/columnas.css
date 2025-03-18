@@ -1,0 +1,41 @@
+/* Estilo para el contenido principal */
+main {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px;
+    box-shadow: 0 4px 8px #0000001a;
+}
+
+/* Sección de contenido y sus columnas */
+.contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Estilo de cada columna */
+.columna {
+    background-color: #f9f9f9;
+    padding: 15px;
+    box-shadow: 0 4px 8px #0000001a;
+}
+
+.columna h2 {
+    text-align: center;
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.columna p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555555;
+}
+
+.columna img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
