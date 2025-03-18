@@ -20,6 +20,18 @@ body {
     width: 150px;
     height: auto;
     transition: 0.3s ease;
+    animation-name: indicio;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes indicio {
+    0% {transform: scale(1);}
+    25% {transform: scale(1.05) rotate(3deg);}
+    50% {transform: scale(1);}
+    75% {transform: scale(1.05) rotate(-3deg);}
+    100% {transform: scale(1);}
 }
 
 .logo img:hover {
@@ -152,6 +164,7 @@ footer input[type="reset"]:hover {
 }
 
 footer p {
+    text-align: center;
     margin-top: 20px;
-    font-size: 10px;
+    font-size: 12px;
 }
