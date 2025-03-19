@@ -1,6 +1,77 @@
-.comercio{
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    "art fot"
+    "art ley";
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px;
+    box-shadow: 0 4px 8px #0000001a;
+}
+
+main p {
+    text-align: justify;
+    line-height: 1.6;
+    color: #555555;
+}
+
+h2, h3 {
     text-align: center;
-    color: #333333;
-    font-size: 24px;
-    margin-bottom: 10px;
+}
+
+article {
+    grid-area: art;
+    background-color: #f9f9f9;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px #0000001a;
+}
+
+aside {
+    grid-area: art;
+    background-color: #ceeae0;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px #0000001a;
+}
+
+.hGeneral .hColombiana {
+    grid-area: art;
+}
+
+.fotos {
+    gap: 15px;
+    grid-area: fot;
+}
+
+.fotos figure img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.fotos figure figcaption {
+    font-size: 10px;
+}
+
+
+.curioso {
+    grid-area: ley;
+}
+
+.curioso p {
+    color: #1a1a1a;
+    font-style: oblique;
+    text-align: center;
+}
+
+.curioso figure img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.curioso figure figcaption {
+    font-size: 10px;
 }
