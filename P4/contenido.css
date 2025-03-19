@@ -39,7 +39,10 @@ aside {
 .hGeneral .hColombiana {
     grid-area: art;
 }
-
+.hColombiana{
+    background-position: center;
+    background-color: #a4d8d0;
+}
 .fotos {
     gap: 15px;
     grid-area: fot;
